@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HIPG Publishing | Books, Stories, and Author Services</title>
+    <meta
+      name="description"
+      content="HIPG publishing website for books, categories, manuscript submissions, marketing excerpts, and reader updates."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="alert-strip" href="#newsletter">Sign up and get reader updates</a>
+      <a class="alert-strip secondary-strip" href="#submit">Submit your manuscript</a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="HIPG Publishing home">
+          <span class="brand-mark">H</span>
+          <span class="brand-text">HIPG Publishing</span>
+        </a>
+
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="primary-links" id="primary-links">
+          <a href="#home">Home</a>
+          <a href="#books">Books</a>
+          <a href="#categories">Categories</a>
+          <a href="#services">Publishing Services</a>
+          <a href="#strategy">Marketing</a>
+          <a href="#social">Social Media</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent publishing website</p>
+          <h1>Stories that find their readers.</h1>
+          <p>
+            HIPG brings together books, devotional writing, career titles, reader
+            excerpts, landing pages, sales links, and community updates in one
+            publishing hub.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#books">Browse books</a>
+            <a class="button secondary" href="#submit">Submit manuscript</a>
+          </div>
+        </div>
+
+        <div class="hero-showcase" aria-label="Featured HIPG titles">
+          <article class="cover-card coral" data-book-preview="Job Seeker Jammy">
+            <span>Business and career</span>
+            <h2>Job Seeker Jammy</h2>
+            <p>Published</p>
+          </article>
+          <article class="cover-card teal" data-book-preview="Lisa of Florence">
+            <span>Fiction</span>
+            <h2>Lisa of Florence</h2>
+            <p>Published</p>
+          </article>
+          <article class="cover-card navy" data-book-preview="Launch">
+            <span>Business and career</span>
+            <h2>Launch</h2>
+            <p>Soon to be published</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter-panel" id="newsletter" aria-labelledby="newsletter-title">
+        <div>
+          <p class="eyebrow">Reader list</p>
+          <h2 id="newsletter-title">Get a free ebook by joining the HIPG list.</h2>
+          <p>
+            Receive new excerpts, book updates, launch notices, and reader offers
+            from HIPG.
+          </p>
+        </div>
+        <form class="signup-form" action="#" method="post">
+          <label class="sr-only" for="newsletter-email">Email</label>
+          <input
+            id="newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Email"
+            autocomplete="email"
+          />
+          <button type="submit">Sign me up</button>
+        </form>
+      </section>
+
+      <section class="section-block" id="books" aria-labelledby="books-title">
+        <div class="section-heading">
+          <p class="eyebrow">Books</p>
+          <h2 id="books-title">Published and upcoming HIPG titles</h2>
+          <p>
+            Active titles include landing pages, reader likes, and sales-link
+            actions. Unavailable titles are greyed out until launch.
+          </p>
+        </div>
+
+        <div class="book-grid" id="book-grid">
+          <article class="book-card active" data-category="business" data-title="Job Seeker Jammy">
+            <div class="mini-cover coral">
+              <span>HIPG</span>
+              <strong>Job Seeker Jammy</strong>
+            </div>
+            <div class="book-card-copy">
+              <p class="book-category">Business and career</p>
+              <h3>Job Seeker Jammy</h3>
+              <p>
+                Practical encouragement for career movement, confidence, and
+                next-step momentum.
+              </p>
+              <div class="book-meta">
+                <span>Published</span>
+                <span><strong data-like-count="Job Seeker Jammy">0</strong> likes</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <button type="button" data-action="more" data-book="Job Seeker Jammy">More</button>
+              <button type="button" data-action="like" data-book="Job Seeker Jammy">Like</button>
+              <button type="button" data-action="buy" data-book="Job Seeker Jammy">Buy</button>
+            </div>
+          </article>
+
+          <article class="book-card active" data-category="fiction" data-title="Lisa of Florence">
+            <div class="mini-cover teal">
+              <span>HIPG</span>
+              <strong>Lisa of Florence</strong>
+            </div>
+            <div class="book-card-copy">
+              <p class="book-category">Fiction</p>
+              <h3>Lisa of Florence</h3>
+              <p>
+                A fiction title positioned for excerpt-led discovery and
+                reader-centered landing pages.
+              </p>
+              <div class="book-meta">
+                <span>Published</span>
+                <span><strong data-like-count="Lisa of Florence">0</strong> likes</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <button type="button" data-action="more" data-book="Lisa of Florence">More</button>
+              <button type="button" data-action="like" data-book="Lisa of Florence">Like</button>
+              <button type="button" data-action="buy" data-book="Lisa of Florence">Buy</button>
+            </div>
+          </article>
+
+          <article class="book-card active" data-category="business" data-title="Launch">
+            <div class="mini-cover navy">
+              <span>HIPG</span>
+              <strong>Launch</strong>
+            </div>
+            <div class="book-card-copy">
+              <p class="book-category">Business and career</p>
+              <h3>Launch</h3>
+              <p>
+                A soon-to-be-published title for building momentum before a new
+                season begins.
+              </p>
+              <div class="book-meta">
+                <span>Coming soon</span>
+                <span><strong data-like-count="Launch">0</strong> likes</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <button type="button" data-action="more" data-book="Launch">More</button>
+              <button type="button" data-action="like" data-book="Launch">Like</button>
+              <button type="button" data-action="buy" data-book="Launch">Buy</button>
+            </div>
+          </article>
+
+          <article class="book-card unavailable" data-category="fiction" data-title="Existence">
+            <div class="mini-cover muted">
+              <span>HIPG</span>
+              <strong>Existence</strong>
+            </div>
+            <div class="book-card-copy">
+              <p class="book-category">Fiction</p>
+              <h3>Existence</h3>
+              <p>Unavailable</p>
+            </div>
+          </article>
+
+          <article class="book-card unavailable" data-category="devotional" data-title="Craftsmen Devotional">
+            <div class="mini-cover muted">
+              <span>HIPG</span>
+              <strong>Craftsmen Devotional</strong>
+            </div>
+            <div class="book-card-copy">
+              <p class="book-category">Devotional</p>
+              <h3>Craftsmen Devotional</h3>
+              <p>Unavailable</p>
+            </div>
+          </article>
+
+          <article class="book-card unavailable" data-category="fiction" data-title="Ako">
+            <div class="mini-cover muted">
+              <span>HIPG</span>
+              <strong>Ako</strong>
+            </div>
+            <div class="book-card-copy">
+              <p class="book-category">Fiction</p>
+              <h3>Ako</h3>
+              <p>Unavailable</p>
+            </div>
+          </article>
+
+          <article class="book-card unavailable" data-category="devotional" data-title="The Psalmist">
+            <div class="mini-cover muted">
+              <span>HIPG</span>
+              <strong>The Psalmist</strong>
+            </div>
+            <div class="book-card-copy">
+              <p class="book-category">Devotional</p>
+              <h3>The Psalmist</h3>
+              <p>Unavailable</p>
+            </div>
+          </article>
+
+          <article class="book-card unavailable" data-category="fiction" data-title="William of Armasia">
+            <div class="mini-cover muted">
+              <span>HIPG</span>
+              <strong>William of Armasia</strong>
+            </div>
+            <div class="book-card-copy">
+              <p class="book-category">Fiction</p>
+              <h3>William of Armasia</h3>
+              <p>Unavailable</p>
+            </div>
+          </article>
+
+          <article class="book-card unavailable" data-category="fiction" data-title="The Last Larkin City">
+            <div class="mini-cover muted">
+              <span>HIPG</span>
+              <strong>The Last Larkin City</strong>
+            </div>
+            <div class="book-card-copy">
+              <p class="book-category">Fiction</p>
+              <h3>The Last Larkin City</h3>
+              <p>Unavailable</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category-band" id="categories" aria-labelledby="categories-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Categories</p>
+          <h2 id="categories-title">List books by category</h2>
+        </div>
+
+        <div class="filter-row" aria-label="Filter books by category">
+          <button class="filter-button is-selected" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="business">Business and career</button>
+          <button class="filter-button" type="button" data-filter="devotional">Devotional</button>
+          <button class="filter-button" type="button" data-filter="fiction">Fiction</button>
+        </div>
+
+        <div class="category-columns">
+          <article>
+            <h3>Business and career</h3>
+            <a href="#books">Job Seeker Jammy</a>
+            <a href="#books">Launch</a>
+          </article>
+          <article>
+            <h3>Devotional</h3>
+            <span>Craftsmen Devotional</span>
+            <span>The Psalmist</span>
+          </article>
+          <article>
+            <h3>Fiction</h3>
+            <a href="#books">Lisa of Florence</a>
+            <span>Existence</span>
+            <span>Ako</span>
+            <span>William of Armasia</span>
+            <span>The Last Larkin City</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block services" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">Publishing services</p>
+          <h2 id="services-title">Support from manuscript to marketplace</h2>
+          <p>
+            A publishing-services section shaped by the Confidence Networks
+            model: editorial care, design, marketing, distribution, submissions,
+            and reader growth.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article>
+            <h3>Editorial excellence</h3>
+            <p>
+              Developmental support that strengthens a manuscript while keeping
+              the author’s voice clear and intact.
+            </p>
+          </article>
+          <article>
+            <h3>Artistic design</h3>
+            <p>
+              Cover and interior presentation designed to make each book feel
+              crafted, polished, and ready for readers.
+            </p>
+          </article>
+          <article>
+            <h3>Strategic marketing</h3>
+            <p>
+              Release planning, excerpts, social posts, reader lists, and title
+              pages built around each book’s audience.
+            </p>
+          </article>
+          <article>
+            <h3>Global distribution</h3>
+            <p>
+              A sales-link approach that can connect readers to Amazon,
+              IngramSpark, BookBub, and other marketplace destinations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="strategy-panel" id="strategy" aria-labelledby="strategy-title">
+        <div class="strategy-copy">
+          <p class="eyebrow">Fiction marketing strategy</p>
+          <h2 id="strategy-title">Excerpt-led publishing funnel</h2>
+          <p>
+            Post minimal viable excerpts on Substack, LinkedIn, Instagram,
+            TikTok, and YouTube to attract readers, then send each click into a
+            focused book landing page.
+          </p>
+        </div>
+        <ol class="strategy-steps">
+          <li>
+            <span>1</span>
+            <strong>Publish excerpts</strong>
+            <p>Share short passages, author notes, and launch updates.</p>
+          </li>
+          <li>
+            <span>2</span>
+            <strong>Record reader signals</strong>
+            <p>Track likes and interest before each book’s release window.</p>
+          </li>
+          <li>
+            <span>3</span>
+            <strong>Send readers to buy links</strong>
+            <p>Route interested readers to Amazon, IngramSpark, BookBub, or a direct sales page.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="submit-band" id="submit" aria-labelledby="submit-title">
+        <div>
+          <p class="eyebrow">Submissions</p>
+          <h2 id="submit-title">Ready to share your story?</h2>
+          <p>
+            Send a manuscript or query note for consideration. This demo form is
+            ready to connect to your preferred backend.
+          </p>
+        </div>
+
+        <form class="submission-form" action="#" method="post">
+          <label>
+            <span>Full Name</span>
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email Address</span>
+            <input type="email" name="submission-email" placeholder="Your email" />
+          </label>
+          <label>
+            <span>Subject</span>
+            <select name="subject">
+              <option>Manuscript submission</option>
+              <option>Publishing services</option>
+              <option>Book marketing</option>
+              <option>Reader inquiry</option>
+            </select>
+          </label>
+          <label class="full-field">
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell us about the project"></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="social">
+      <div>
+        <p class="eyebrow">Social Media</p>
+        <h2>Connect with HIPG</h2>
+        <p>Follow excerpts, launch updates, videos, and reader notes.</p>
+      </div>
+      <nav class="social-links" aria-label="Social media">
+        <a href="#">My Substack</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </nav>
+    </footer>
+
+    <dialog class="book-dialog" id="book-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close book details">x</button>
+      <div class="dialog-layout">
+        <div class="mini-cover dialog-cover" id="dialog-cover">
+          <span>HIPG</span>
+          <strong id="dialog-cover-title">Book title</strong>
+        </div>
+        <div>
+          <p class="eyebrow" id="dialog-category">Category</p>
+          <h2 id="dialog-title">Book title</h2>
+          <p id="dialog-copy"></p>
+          <div class="dialog-links">
+            <a href="#" data-store-link>Amazon</a>
+            <a href="#" data-store-link>IngramSpark</a>
+            <a href="#" data-store-link>BookBub</a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
